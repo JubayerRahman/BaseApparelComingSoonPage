@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    Font-size: 16px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.logoSection{
+    width: 40%;
+    position: absolute;
+}
+.logo{
+    margin: 20px;
+    margin-left: 5vw;
+}
+.imgsection{
+    background-image: url(./images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    background-position: top;
+    height: 100vh;
+    float: right;
+    position: relative;
+}
+.textSection{
+    position: relative;
+    padding-top: 20vh;
+    width: 40vw;
+    padding-left: 5vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 95vh;
+}
+.we{
+    color: hsl(0, 36%, 70%); 
+    font-weight: 200;
+}
+.soon{
+    font-size: 80px;
+    letter-spacing: 20px;
+    color: hsl(0, 6%, 24%);
+    line-height: 100px;
+}
+.data{
+    color: hsl(0, 93%, 68%);
+    line-height: 20px;
+}
+form{
+    align-items: center;
+}
+input{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid hsl(0, 93%, 68%); 
+    width: 80%;
+    border-radius: 20px;
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 10px;
+}
+::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+.error{
+    color: hsl(0, 93%, 68%);
+    margin-left: -70px;
+    /* margin-right: 5px; */
+}
+button{
+    margin-top: 10px;
+    font-size: 35px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    color: white;
+    border: none; 
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 10px;
+}
+
+.errorText{
+    color: hsl(0, 93%, 68%);
+    font-size: 14px;
+    margin-left: 10px;
+    font-style: italic;
+}
+.attribution{
+    margin-top: 10px;
+}
+@media (max-width:768px) {
+    .logoSection{
+        position: relative;
+        width: 100%;
+    }
+    .imgsection{
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: contain;
+        height: 40vh;
+        width: 100%;
+    }
+    .textSection{
+        width: 100%;
+        padding-top:0px;
+    }
+    .textSection h1{
+        font-size: 35px;
+        letter-spacing: 10px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .textSection .data{
+        color: hsl(0, 6%, 24%);
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form input{
+        width: 90%;
+    }
+    .error{
+        margin-left: -90px;
+    }
+    .errorText{
+        font-size: 16px;
+        font-style: italic;
+        margin-left: 0px;
+        color: hsl(0, 93%, 68%);
+    }
+}
